@@ -6,7 +6,7 @@ prompt.start();
 console.log("Guess a number between 1 and 10")
 
 function turn(userHealth, zombieHealth){
-  if (userHealth > 0  || zombieHealth > 0){
+  if (userHealth >= 0  && zombieHealth >= 0){
     prompt.get(["guess"], function(err, result){
       var num = 7
       //Math.floor(Math.random() * (11 - 1) + 1);
